@@ -57,6 +57,10 @@ func TestInvalidAuthHeaders(t *testing.T) {
 			input: http.Header{},
 			want:  ErrNoAuthHeaderIncluded.Error(),
 		},
+		{
+			input: http.Header{"Authorization": {"ApiKey one"}},
+			want:  "the api key",
+		},
 	}
 
 	for _, tc := range testCases {

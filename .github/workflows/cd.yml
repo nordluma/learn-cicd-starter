@@ -30,4 +30,4 @@ jobs:
         uses: "google-github-actions/setup-gcloud@v2"
 
       - name: Push to Google Artifact Registry
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/sacred-garden-469716-n6/notely-ar-repo/notely/notely:latest .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/sacred-garden-469716-n6/notely-ar-repo/notely:latest .

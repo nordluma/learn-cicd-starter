@@ -33,4 +33,4 @@ jobs:
         run: gcloud builds submit --tag us-central1-docker.pkg.dev/sacred-garden-469716-n6/notely-ar-repo/notely:latest .
 
       - name: Deploy to Cloud Run
-        run: gcloud run deploy notely --image us-central-docker.pkg.dev/sacred-garden-469716-n6/notely-ar-repo/notely:latest --region REGION --allow-unauthenticated --project PROJECT_ID --max-instances=4
+        run: gcloud run deploy notely --image us-central-docker.pkg.dev/sacred-garden-469716-n6/notely-ar-repo/notely:latest --region us-central1 --allow-unauthenticated --project sacred-garden-469716-n6 --max-instances=4
